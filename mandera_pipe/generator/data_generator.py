@@ -10,8 +10,13 @@ Usage:
 
 from pymongo import MongoClient
 
-from config.settings import MONGO_URI, MONGO_DB, MONGO_COLLECTIONS, generate_batch_id
-from generator import faker_customers, faker_products, faker_orders
+from mandera_pipe.config.settings import (
+    MONGO_URI,
+    MONGO_DB,
+    MONGO_COLLECTIONS,
+    generate_batch_id,
+)
+from mandera_pipe.generator import faker_customers, faker_products, faker_orders
 
 
 def run():
